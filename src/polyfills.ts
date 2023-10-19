@@ -109,7 +109,5 @@ import 'core-js/es/reflect';
  */
 import 'zone.js/dist/zone'; // Included with Angular CLI.
 
-import 'core-js/es5/array';
-import 'core-js/es5/promise';
-import 'core-js/es6/array';
-import 'core-js/es6/promise';
+import 'core-js/es/array';
+import 'core-js/es/promise';
