@@ -4,6 +4,6 @@ import { AppModule } from './app/app.module';
 import './polyfills';
 
 enableProdMode();
-console.log("HIiiiiiiiiiiiiiiiiiiiiiii")
+console.log("HIiiiiiiiiiiiiiiiiiiiiiii");
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
