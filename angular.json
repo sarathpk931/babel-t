@@ -19,7 +19,11 @@
           "options": {
             "customWebpackConfig":{
               "path": "./webpack.custom.js"
+              
            },
+           "allowedCommonJsDependencies":[
+            "lodash"
+         ],
           
            "indexTransform": "./index-html-transform.js",
            "outputPath": "dist/testapp",
