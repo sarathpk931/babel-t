@@ -32,7 +32,7 @@
             "polyfills": [
               "src/polyfills.ts"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "tsconfig.json",
             "inlineStyleLanguage": "less",
             "assets": [
               "src/favicon.ico",
