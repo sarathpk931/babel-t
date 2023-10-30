@@ -16,11 +16,11 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2015",
+    "target": "ES5",
     //"module": "ES2015",
     "useDefineForClassFields": false,
     "lib": [
-      "ES2015",
+      "ES5",
       "dom"
     ]
   },
