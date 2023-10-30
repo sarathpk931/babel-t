@@ -7,14 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
+
 </head>
 <body>
 
-<script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>    
-<script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
+
   <script src="polyfills.ts" type="type script"></script>
+  <script>
+    // Use Babel to transpile ES6 to ES5
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js';
+    script.async = true;
+    script.onload = function () {
+      // Transpile and execute the ES6 code
+      const es6Code = document.createElement('script');
+      es6Code.textContent = `Babel.transformFile('polyfils.ts', { presets: ['@babel/preset-env'] }, function (err, result) {
+        if (err) throw err;
+        eval(result.code);
+      });`;
+      document.body.appendChild(es6Code);
+    };
+    document.head.appendChild(script);
+  </script>
  <script>console.log("rrrrrrrr");</script>
   <app-root></app-root>
 </body>
