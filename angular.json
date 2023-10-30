@@ -30,7 +30,7 @@
            "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
-              "src/polyfills.js"
+              "src/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "less",
