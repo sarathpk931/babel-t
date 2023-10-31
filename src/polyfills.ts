@@ -110,3 +110,6 @@ import 'zone.js/dist/zone'; // Included with Angular CLI.
 
 import 'core-js/es/array';
 import 'core-js/es/promise';
+import 'web-animations-js';  
+
+

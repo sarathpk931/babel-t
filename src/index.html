@@ -14,21 +14,18 @@
 
   <script src="polyfills.ts" type="type script"></script>
   <script>
-    // Use Babel to transpile ES6 to ES5
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js';
-    script.async = true;
-    script.onload = function () {
-      // Transpile and execute the ES6 code
-      const es6Code = document.createElement('script');
-      es6Code.textContent = `Babel.transformFile('polyfils.ts', { presets: ['@babel/preset-env'] }, function (err, result) {
-        if (err) throw err;
-        eval(result.code);
-      });`;
-      document.body.appendChild(es6Code);
-    };
-    document.head.appendChild(script);
-  </script>
+    // Transpile ES6 code to ES5 and execute it
+    (function () {
+        const script = document.createElement('script');
+        script.src = 'polyfills.5e0316bdb7f48060.js';
+        script.type = 'module';
+        script.async = true;
+        script.onload = function () {
+            document.head.removeChild(script);
+        };
+        document.head.appendChild(script);
+    })();
+</script>
  <script>console.log("rrrrrrrr");</script>
   <app-root></app-root>
 </body>
