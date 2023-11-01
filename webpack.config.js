@@ -1,4 +1,4 @@
 module.exports = {
   // ...
- target: ['web', 'es5'],
+ target: ['browserslist'],
 }
