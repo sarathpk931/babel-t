@@ -1,5 +1,5 @@
 module.exports = async (targetOptions, indexHtmlContent) => {
-    indexHtmlContent = indexHtmlContent.replaceAll("type=\"module\"", 
+    indexHtmlContent = indexHtmlContent.replaceAll("type=\"nomodule\"", 
     "text/javascript");
   
     console.log("*****************");
