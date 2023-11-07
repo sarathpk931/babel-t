@@ -31,7 +31,7 @@ import 'core-js/es/date';
 import 'core-js/es/array';
 import 'core-js/es/regexp';
 import 'core-js/es/map';
-import 'core-js/es/set';  //
+import 'core-js/es/set';
 
 // polyfill all `core-js` features, including early-stage proposals:
 import "core-js";
@@ -93,24 +93,30 @@ import 'core-js/features/object/entries';
 
 import 'regenerator-runtime/runtime';
 
-
+import 'promise-polyfill/src/polyfill';
 
 /** IE10 and IE11 requires the following for NgClass support on SVG elements */
- // Run `npm install --save classlist.js`.
+//import 'classlist.js'; // Run `npm install --save classlist.js`.
 
-/** IE10 and IE11 requires the following to support `@angular/animation`. */ // Run `npm install --save web-animations-js`.
+/** IE10 and IE11 requires the following to support `@angular/animation`. */
+//import 'web-animations-js'; // Run `npm install --save web-animations-js`.
 
 /** Evergreen browsers require these. **/
-import 'core-js/es/reflect';
+//import 'core-js/es/reflect';
 
 /***************************************************************************************************
  * Zone JS is required by Angular itself.
  */
 import 'zone.js/dist/zone'; // Included with Angular CLI.
 
-import 'core-js/es/array';
-import 'core-js/es/promise';
-import 'classlist.js';
-import 'web-animations-js';  
+/***************************************************************************************************
+ * APPLICATION IMPORTS
+ */
 
+/**
+ * Date, currency, decimal and percent pipes.
+ * Needed for: All but Chrome, Firefox, Edge, IE11 and Safari 10
+ */
+//import 'intl'; // Run `npm install --save intl`.
 
+//import 'whatwg-fetch';  //Run npm install whatwg-fetch --save; 
